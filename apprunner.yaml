@@ -1,7 +1,7 @@
 version: 1.0
 runtime: docker
 build:
-  dockerfilePath: ./Dockerfile
+  dockerfilePath: Dockerfile
   context: .
   buildCommand: ./mvnw clean package -DskipTests
 run:
