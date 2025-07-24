@@ -3,7 +3,6 @@ runtime: docker
 build:
   dockerfilePath: Dockerfile
   context: .
-  buildCommand: ./mvnw clean package -DskipTests
 run:
   runtimeEnvironmentVariables:
     JAVA_OPTS: "-Dquarkus.http.port=8080"
